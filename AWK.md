@@ -1,7 +1,7 @@
 # AWK Basics — Detailed Learning Report
 
 **Prepared by:** Rahul Raj
-**Track:** Linux Shell Scripting — AWK Fundamentals (16 Topics)
+**Track:** Linux  — AWK Fundamentals (16 Topics)
 
 ---
 
