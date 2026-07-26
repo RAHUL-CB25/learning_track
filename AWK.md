@@ -21,7 +21,7 @@ Each of the 16 topics below includes: a **definition**, the **sample data** used
 
 ---
 
-## Table of Contents
+##Contents
 
 1. [Introduction to AWK](#1-introduction-to-awk)
 2. [Executing AWK in Different Ways](#2-executing-awk-in-different-ways)
