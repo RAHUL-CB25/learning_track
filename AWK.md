@@ -21,25 +21,6 @@ Each of the 16 topics below includes: a **definition**, the **sample data** used
 
 ---
 
-##Contents
-
-1. [Introduction to AWK](#1-introduction-to-awk)
-2. [Executing AWK in Different Ways](#2-executing-awk-in-different-ways)
-3. [Customizing Input Field Separator (FS)](#3-customizing-input-field-separator-fs)
-4. [Customizing Output Field Separator (OFS)](#4-customizing-output-field-separator-ofs)
-5. [Customizing Input Record Separator (RS)](#5-customizing-input-record-separator-rs)
-6. [Customizing Output Record Separator (ORS)](#6-customizing-output-record-separator-ors)
-7. [Getting Number of Fields and Records (NF & NR)](#7-getting-number-of-fields-and-records-nf--nr)
-8. [Regular Expressions in AWK](#8-regular-expressions-in-awk)
-9. [Using Arithmetic Operators in AWK — Part 1](#9-using-arithmetic-operators-in-awk--part-1)
-10. [Using Arithmetic Operators in AWK — Part 2](#10-using-arithmetic-operators-in-awk--part-2)
-11. [Using Increment Operators in AWK](#11-using-increment-operators-in-awk)
-12. [AWK Sample Use Case](#12-awk-sample-use-case)
-13. [Using if-else in AWK](#13-using-if-else-in-awk)
-14. [Using if-else if in AWK](#14-using-if-else-if-in-awk)
-15. [While Loop in AWK](#15-while-loop-in-awk)
-16. [Custom Functions in AWK](#16-custom-functions-in-awk)
-
 ---
 
 ## 1. Introduction to AWK
@@ -806,4 +787,3 @@ Over these 16 topics, I practiced and can now explain, word by word, how each of
 | `while ( condition ) { }` | Repeating an action while a condition holds |
 | `function name() { }` | Defining and calling reusable custom functions |
 
-This report is intended as a reference for my team and manager, summarizing my AWK learning progress with real commands, their component-by-component meaning, and the outputs tested on my local Linux environment.
