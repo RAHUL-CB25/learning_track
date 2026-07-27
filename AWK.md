@@ -787,3 +787,14 @@ Over these 16 topics, I practiced and can now explain, word by word, how each of
 | `while ( condition ) { }` | Repeating an action while a condition holds |
 | `function name() { }` | Defining and calling reusable custom functions |
 
+---
+
+## References
+
+- GNU Awk User's Guide — Free Software Foundation. https://www.gnu.org/software/gawk/manual/gawk.html
+- *The AWK Programming Language* — A. Aho, B. Kernighan, P. Weinberger (Addison-Wesley).
+- AWK command in Linux/Unix with examples — GeeksforGeeks. https://www.geeksforgeeks.org/awk-command-unixlinux-examples/
+- AWK Tutorial — Tutorialspoint. https://www.tutorialspoint.com/awk/index.htm
+- Regular Expressions in awk — GNU Awk User's Guide, chapter on regexp. https://www.gnu.org/software/gawk/manual/html_node/Regexp.html
+- `man awk` / `man gawk` — local manual pages (run on Ubuntu 22.04, gawk package).
+- Stack Overflow — various threads referenced for RS/FS edge cases with mawk vs gawk. https://stackoverflow.com/questions/tagged/awk
