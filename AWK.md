@@ -7,7 +7,6 @@
 
 ## Overview
 
-This report documents my hands-on practice with the **AWK** text-processing tool. AWK works like this in general:
 
 ```
 awk 'BEGIN{ ... } pattern { action } END{ ... }' filename
