@@ -1,7 +1,7 @@
 # AWK Basics — Detailed Learning Report
 
 **Prepared by:** Rahul Raj
-**Track:** Linux  — AWK Fundamentals (16 Topics)
+**Track:** Linux  — AWK Fundamentals 
 
 ---
 
@@ -705,63 +705,6 @@ Sum is  700
 ```
 
 ---
-
-## 16. Custom Functions in AWK
-
-**Definition:** AWK lets you define your own reusable **functions** with the `function` keyword, which can then be called by name from the main pattern-action block — keeping code organized and avoiding repetition.
-
-**Script (`custom.awk`):**
-```awk
-function myfunc()
-{
-    print $1, "=>", $NF
-}
-BEGIN{
-    FS=":"
-}
-{
-    myfunc()
-}
-```
-
-**Word-by-word breakdown:**
-| Part | Meaning |
-|---|---|
-| `function myfunc()` | Declares a new custom function named `myfunc`, taking no parameters (`()` is empty). |
-| `{ print $1, "=>", $NF }` | The function's body: print field 1, then the literal arrow `"=>"`, then `$NF` — the **last field** of the current line (`NF` is the field count, so `$NF` dynamically means "the last field", however many fields there are). |
-| `BEGIN{ FS=":" }` | Before processing starts, set the field separator to colon (matches the format of `/etc/passwd`, which is colon-delimited). |
-| `{ myfunc() }` | Main action block: for every line, **call** the custom function `myfunc`, which then runs its own print logic using the current line's fields. |
-
-**Data (`passwd` — system user/shell mapping file):**
-```
-root:x:0:0:root:/root:/bin/bash
-shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
-halt:x:7:0:halt:/sbin:/sbin/halt
-mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
-...
-osboxes:x:1000:1000::/home/osboxes:/bin/bash
-hadoop:x:1001:1001::/home/hadoop:/bin/bash
-```
-
-**Command:**
-```bash
-awk -f custom.awk /etc/passwd
-```
-| Part | Meaning |
-|---|---|
-| `-f custom.awk` | Load and run the program from the script file. |
-| `/etc/passwd` | The system file being read — one line per user account, colon-separated. |
-
-**Output:**
-```
-root => /bin/bash
-shutdown => /sbin/shutdown
-halt => /sbin/halt
-mail => /sbin/nologin
-...
-osboxes => /bin/bash
-hadoop => /bin/bash
-```
 
 ---
 
