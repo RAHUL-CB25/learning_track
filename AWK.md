@@ -16,7 +16,6 @@ awk 'BEGIN{ ... } pattern { action } END{ ... }' filename
 - **pattern { action }** → runs the `{ action }` for *every line* that matches `pattern`. If no pattern is given, the action runs on every line.
 - **END{ }** → runs once, *after* all lines have been read (used to print totals, summaries, footers).
 
-Each of the 16 topics below includes: a **definition**, the **sample data** used, the **exact command**, a **word-by-word breakdown** of that command, and the **output** produced.
 
 ---
 
