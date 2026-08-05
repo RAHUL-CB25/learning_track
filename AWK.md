@@ -23,8 +23,7 @@ Each of the 16 topics below includes: a **definition**, the **sample data** used
 ---
 
 ## 1. Introduction to AWK
-
-**Definition:** AWK is a pattern-scanning and text-processing language created for manipulating structured text (rows and columns). It reads input **line by line**, automatically splits each line into **fields** (`$1`, `$2`, `$3`, ...), and lets you run an **action** on lines that match a **pattern**. `$0` always refers to the *whole line*.
+AWK is a command and a pattern-scanning, text-processing language used to manipulate and analyze structured text. It reads input line by line, automatically splits each line into fields ($1, $2, $3, ...), where $0 represents the entire line, and performs actions based on specified patterns.
 
 **Data (`file1.txt`):**
 ```
