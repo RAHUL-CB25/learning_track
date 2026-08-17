@@ -1,89 +1,130 @@
-# Python Built-in Methods — Quick Interview Cheat Sheet
+# Python Cheat Sheet
 
-## STRING `str`
+<table>
+<tr>
+<td width="50%" valign="top">
 
-| Method | Functionality |
-|---|---|
-| `upper()` | Converts string to uppercase |
-| `lower()` | Converts string to lowercase |
-| `title()` | Makes first letter of each word uppercase |
-| `capitalize()` | Makes first character uppercase |
-| `strip()` | Removes spaces from both ends |
-| `lstrip()` | Removes spaces from left |
-| `rstrip()` | Removes spaces from right |
-| `split()` | Splits string into a list |
-| `join()` | Joins iterable elements into a string |
-| `replace()` | Replaces part of a string |
-| `find()` | Returns index; `-1` if not found |
-| `index()` | Returns index; raises error if not found |
-| `count()` | Counts occurrences |
-| `startswith()` | Checks beginning of string |
-| `endswith()` | Checks ending of string |
-| `isalpha()` | Checks whether all characters are alphabets |
-| `isdigit()` | Checks whether all characters are digits |
-| `isalnum()` | Checks alphabets + digits |
-| `isspace()` | Checks whether all characters are whitespace |
+## 1. List / Array
 
----
+Lists are Python's dynamic arrays. They are ordered and mutable.
 
-## LIST `list`
+- `append(x)` → add one item
+- `extend(x)` → add multiple items
+- `insert(i, x)` → add at index
+- `remove(x)` → remove first matching value
+- `pop(i)` → remove and return item
+- `sort()` → sort the list
+- `reverse()` → reverse the list
+- `index(x)` → get first index
+- `count(x)` → count occurrences
+- `clear()` → remove all items
+- `len(list)` → number of items
 
-| Method | Functionality |
-|---|---|
-| `append(x)` | Adds one element at the end |
-| `extend(x)` | Adds multiple elements |
-| `insert(i, x)` | Inserts element at index |
-| `remove(x)` | Removes first matching value |
-| `pop(i)` | Removes and returns element at index |
-| `clear()` | Removes all elements |
-| `index(x)` | Returns first index of value |
-| `count(x)` | Counts occurrences |
-| `sort()` | Sorts list in-place |
-| `reverse()` | Reverses list in-place |
-| `copy()` | Creates a shallow copy |
+**Remember:**  
+`append` = one | `extend` = many  
+`remove` = value | `pop` = index  
+`sort` = changes list | `sorted` = new list
 
 ---
 
-## TUPLE `tuple`
+## 2. Dictionary
 
-Tuple is **ordered + immutable**.
+Stores data as `key : value`. Keys are unique.
 
-| Method | Functionality |
-|---|---|
-| `count(x)` | Counts occurrences |
-| `index(x)` | Returns first index of value |
+- `get(key)` → get value safely
+- `keys()` → all keys
+- `values()` → all values
+- `items()` → key-value pairs
+- `update()` → add/update values
+- `pop(key)` → remove key
+- `popitem()` → remove last pair
+- `setdefault()` → get or add default
+- `clear()` → remove all
 
-Common built-ins:
 ```python
-len(t)       # number of elements
-min(t)       # smallest value
-max(t)       # largest value
-sum(t)       # total
-sorted(t)    # returns sorted list
+d = {"name": "Rahul", "age": 22}
+
+d.get("name")
+d.keys()
+d.values()
+d.items()
+d.update({"age": 23})
+d.pop("age")
 ```
 
+`"name" in d` → check key  
+`len(d)` → number of pairs
+
 ---
 
-## SET `set`
+## 3. Tuple
 
-| Method | Functionality |
-|---|---|
-| `add(x)` | Adds one element |
-| `update(x)` | Adds multiple elements |
-| `remove(x)` | Removes element; error if absent |
-| `discard(x)` | Removes element; no error if absent |
-| `pop()` | Removes and returns an arbitrary element |
-| `clear()` | Removes all elements |
-| `union()` | Combines unique elements |
-| `intersection()` | Returns common elements |
-| `difference()` | Returns elements only in first set |
-| `symmetric_difference()` | Returns elements in either set, not both |
-| `issubset()` | Checks if set is contained in another |
-| `issuperset()` | Checks if set contains another |
-| `isdisjoint()` | Checks if sets have no common elements |
-| `copy()` | Creates a shallow copy |
+**Ordered • Immutable • Duplicates allowed**
 
-Operators:
+- `count(x)` → count occurrences
+- `index(x)` → first index
+
+```python
+len(t)
+min(t)
+max(t)
+sum(t)
+sorted(t)       # returns a list
+```
+
+A tuple cannot be changed after creation.
+
+</td>
+
+<td width="50%" valign="top">
+
+## 4. String
+
+Strings are ordered and immutable.
+
+- `upper()` → uppercase
+- `lower()` → lowercase
+- `title()` → capitalize each word
+- `capitalize()` → capitalize first character
+- `strip()` → remove spaces from both ends
+- `lstrip()` / `rstrip()` → remove left / right spaces
+- `split()` → string to list
+- `join()` → iterable to string
+- `replace(a,b)` → replace text
+- `find(x)` → position, `-1` if absent
+- `index(x)` → position, error if absent
+- `count(x)` → count occurrences
+- `startswith(x)` → check beginning
+- `endswith(x)` → check ending
+- `isalpha()` → alphabets only
+- `isdigit()` → digits only
+- `isalnum()` → alphabets + digits
+- `isspace()` → whitespace only
+
+**`find()` vs `index()`**  
+`find()` → `-1` if missing  
+`index()` → raises error if missing
+
+---
+
+## 5. Set
+
+**Unique • Mutable**
+
+- `add(x)` → add one
+- `update(x)` → add many
+- `remove(x)` → remove; error if absent
+- `discard(x)` → remove; no error
+- `pop()` → remove arbitrary item
+- `clear()` → remove all
+- `union()` → combine
+- `intersection()` → common items
+- `difference()` → first set only
+- `symmetric_difference()` → in either, not both
+- `issubset()` → check subset
+- `issuperset()` → check superset
+- `isdisjoint()` → no common items
+
 ```python
 a | b     # union
 a & b     # intersection
@@ -93,71 +134,41 @@ a ^ b     # symmetric difference
 
 ---
 
-## DICTIONARY `dict`
+## 6. Built-in Functions
 
-| Method | Functionality |
-|---|---|
-| `get(key)` | Gets value safely |
-| `keys()` | Returns all keys |
-| `values()` | Returns all values |
-| `items()` | Returns key-value pairs |
-| `update()` | Adds/updates key-value pairs |
-| `pop(key)` | Removes key and returns value |
-| `popitem()` | Removes and returns last key-value pair |
-| `setdefault()` | Gets key; inserts default if missing |
-| `clear()` | Removes all items |
-| `copy()` | Creates a shallow copy |
+`len()` → length  
+`type()` → data type  
+`isinstance()` → type check  
+`sum()` → total  
+`min()` / `max()` → smallest / largest  
+`abs()` → absolute value  
+`round()` → round number  
+`sorted()` → new sorted list  
+`reversed()` → reverse iterator  
+`enumerate()` → index + value  
+`zip()` → combine iterables  
+`map()` → apply function  
+`filter()` → filter values  
+`any()` → at least one true  
+`all()` → all true  
+`range()` → number sequence
 
-Example:
-```python
-d = {"name": "Rahul", "age": 22}
+</td>
+</tr>
 
-d.get("name")          # Rahul
-d.keys()               # all keys
-d.values()             # all values
-d.items()              # key-value pairs
-d.update({"age": 23})  # update value
-d.pop("age")           # remove key
-```
+<tr>
+<td width="50%" valign="top">
 
----
-
-# IMPORTANT BUILT-IN FUNCTIONS
-
-| Function | Functionality |
-|---|---|
-| `len()` | Returns number of elements |
-| `type()` | Returns data type |
-| `isinstance()` | Checks object type |
-| `sum()` | Returns total |
-| `min()` | Returns smallest value |
-| `max()` | Returns largest value |
-| `abs()` | Returns absolute value |
-| `round()` | Rounds a number |
-| `sorted()` | Returns a new sorted list |
-| `reversed()` | Returns reversed iterator |
-| `enumerate()` | Gives index + value |
-| `zip()` | Combines iterables |
-| `map()` | Applies function to each element |
-| `filter()` | Filters elements by condition |
-| `any()` | `True` if at least one item is true |
-| `all()` | `True` if every item is true |
-| `range()` | Generates number sequence |
-
----
-
-# FUNCTIONS
+## 7. Functions
 
 ```python
 def add(a, b):
     return a + b
 
 def test(*args):
-    # args → tuple of positional arguments
     pass
 
 def test(**kwargs):
-    # kwargs → dictionary of keyword arguments
     pass
 
 lambda x: x * x
@@ -168,40 +179,42 @@ list(map(lambda x: x * 2, data))
 list(filter(lambda x: x % 2 == 0, data))
 ```
 
+`*args` → tuple  
+`**kwargs` → dictionary  
+`lambda` → anonymous function
+
 ---
 
-# OOP QUICK REVISION
+## 8. OOP
 
-```text
-Class          → Blueprint for objects
-Object         → Instance of class
-Encapsulation  → Controls access to data
-Inheritance    → Reuses parent class functionality
-Polymorphism   → Same interface, different behavior
-Abstraction    → Hides implementation details
-```
+**Class** → blueprint  
+**Object** → instance  
+**Encapsulation** → controls data access  
+**Inheritance** → code reuse  
+**Polymorphism** → different behavior  
+**Abstraction** → hides implementation
 
 ### Method Types
 
 ```python
 def show(self):
-    pass                  # Instance method
+    pass
 
 @classmethod
 def show(cls):
-    pass                  # Class method
+    pass
 
 @staticmethod
 def add(a, b):
-    return a + b          # Static method
+    return a + b
 ```
 
-### Access Modifiers
+### Access
 
 ```python
-self.name       # Public
-self._name      # Protected convention
-self.__name     # Private/name mangling
+self.name       # public
+self._name      # protected convention
+self.__name     # private
 ```
 
 ### Inheritance
@@ -223,19 +236,17 @@ class Vehicle(ABC):
         pass
 ```
 
----
+</td>
 
-# ADVANCED PYTHON
+<td width="50%" valign="top">
 
-```text
-Comprehension → Short way to create collections
-Iterator      → Object used with next()
-Generator     → Uses yield; produces values lazily
-Decorator     → Modifies/enhances a function
-Exception     → Handles runtime errors
-```
+## 9. Advanced Python
 
-### Comprehension
+**Comprehension** → short collection creation  
+**Iterator** → works with `next()`  
+**Generator** → uses `yield`, lazy values  
+**Decorator** → changes function behavior  
+**Exception** → handles runtime errors
 
 ```python
 [x*x for x in nums]
@@ -243,8 +254,6 @@ Exception     → Handles runtime errors
 {x:x*x for x in nums}
 [x for x in nums if x % 2 == 0]
 ```
-
-### Exception
 
 ```python
 try:
@@ -257,8 +266,6 @@ finally:
     ...
 ```
 
-### Generator
-
 ```python
 def numbers():
     for i in range(5):
@@ -267,39 +274,46 @@ def numbers():
 
 ---
 
-# DSA / COLLECTIONS
+## 10. DSA / Collections
 
 ```python
 from collections import Counter, defaultdict, deque
 ```
 
 ```python
-Counter(arr)                    # Frequency count
-Counter(arr).most_common()      # Most frequent elements
+Counter(arr)
+Counter(arr).most_common()
 
-d = defaultdict(list)            # Default value for missing key
+d = defaultdict(list)
 d["a"].append(1)
 
 q = deque()
 q.append(x)
-q.popleft()                      # Queue → FIFO
+q.popleft()
 
 stack = []
 stack.append(x)
-stack.pop()                      # Stack → LIFO
+stack.pop()
 ```
+
+`Counter` → frequency  
+`defaultdict` → default value  
+`deque` → queue / FIFO  
+`list` → stack / LIFO
 
 ### Heap
 
 ```python
 import heapq
 
-heapq.heappush(heap, x)          # Insert
-heapq.heappop(heap)              # Remove minimum
-heapq.heapify(arr)               # Convert to min-heap
-heapq.nlargest(k, arr)           # k largest
-heapq.nsmallest(k, arr)          # k smallest
+heapq.heappush(heap, x)
+heapq.heappop(heap)
+heapq.heapify(arr)
+heapq.nlargest(k, arr)
+heapq.nsmallest(k, arr)
 ```
+
+`heapq` → min heap / priority queue
 
 ### Binary Search
 
@@ -312,62 +326,36 @@ bisect.bisect_right(arr, x)
 
 ---
 
-# COMMON INTERVIEW DIFFERENCES
+## 11. SOLID
+
+**S — Single Responsibility**  
+One class, one main responsibility.
+
+**O — Open/Closed**  
+Open for extension, closed for modification.
+
+**L — Liskov Substitution**  
+Child should safely replace parent.
+
+**I — Interface Segregation**  
+Don't force unused methods.
+
+**D — Dependency Inversion**  
+Depend on abstractions, not concrete classes.
+
+</td>
+</tr>
+</table>
+
+##  Quick Revision
 
 ```text
-==          → Value comparison
-is          → Object identity
+LIST   → []       → Ordered, Mutable
+TUPLE  → ()       → Ordered, Immutable
+SET    → set()    → Unique values
+DICT   → {}       → Key : Value
 
-append()    → Adds one object
-extend()    → Adds multiple elements
-
-remove()    → Removes by value
-pop()       → Removes by index / last
-
-sort()      → Modifies original list
-sorted()    → Returns new sorted list
-
-list        → Mutable
-tuple       → Immutable
-
-set         → Unique values
-dict        → Key-value pairs
-
-*args       → Tuple
-**kwargs    → Dictionary
-```
-
----
-
-# SOLID PRINCIPLES
-
-```text
-S → Single Responsibility
-    One class should have one main responsibility.
-
-O → Open/Closed
-    Open for extension, closed for modification.
-
-L → Liskov Substitution
-    Child should safely replace parent.
-
-I → Interface Segregation
-    Don't force unused methods on a class.
-
-D → Dependency Inversion
-    Depend on abstractions, not concrete implementations.
-```
-
-# 1-MINUTE REVISION
-
-```text
-LIST       → []       → Ordered, Mutable, Duplicates
-TUPLE      → ()       → Ordered, Immutable
-SET        → set()    → Unique values
-DICT       → {}       → Key : Value
-
-STACK      → append/pop       → LIFO
-QUEUE      → deque/popleft    → FIFO
-HEAP       → heapq            → Priority Queue
-COUNTER    → Frequency count
+STACK  → append/pop       → LIFO
+QUEUE  → deque/popleft    → FIFO
+HEAP   → heapq            → Priority Queue
 ```
