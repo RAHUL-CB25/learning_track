@@ -347,13 +347,7 @@ Depend on abstractions, not concrete classes.
 </tr>
 </table>
 
-##  Quick Revision
 
-```text
-LIST   → []       → Ordered, Mutable
-TUPLE  → ()       → Ordered, Immutable
-SET    → set()    → Unique values
-DICT   → {}       → Key : Value
 
 STACK  → append/pop       → LIFO
 QUEUE  → deque/popleft    → FIFO
