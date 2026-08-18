@@ -349,7 +349,5 @@ Depend on abstractions, not concrete classes.
 
 
 
-STACK  → append/pop       → LIFO
-QUEUE  → deque/popleft    → FIFO
-HEAP   → heapq            → Priority Queue
+
 ```
