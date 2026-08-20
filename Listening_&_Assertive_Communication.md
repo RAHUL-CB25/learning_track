@@ -2,82 +2,46 @@
 
 ## 1. Active Listening
 
-### Question 1: What are the steps/strategies to do Active Listening? (Minimum 6 points)
+### Question 1: What are the steps or strategies to do Active Listening?
 
-**Answer:**
-
-To become a better active listener, I should:
-
-* Clear my mind and avoid unnecessary thoughts.
-* Give my full attention to the person speaking.
-* Avoid cutting the speaker in between.
-* Listen until the person completes their point.
-* Explain back what I understood in my own words.
-* Listen without judging the person too quickly.
-
----
+* Focus on the speaker and avoid distractions.
+* Do not interrupt while they are speaking.
+* Maintain eye contact and positive body language.
+* Ask questions if something is not clear.
+* Take notes when needed.
+* Summarize important points to confirm understanding.
 
 ## 2. Reflective Listening
 
 ### Question 2: According to Fisher's model, what are the key points of Reflective Listening?
 
-**Answer:**
-
-* Listen properly instead of thinking about what I will say next.
-* Repeat or explain the speaker’s message in my own words to check my understanding.
-* Notice their words, voice, emotions, and body movements while listening.
-
----
+* Listen carefully, understand the speaker's point of view, notice their feelings, and ask questions or summarize to make sure I understood correctly.
 
 ## 3. Reflection
 
 ### Question 3: What are the obstacles in your listening process?
 
-**Answer:**
-
-Some problems that affect my listening are:
-
-* My mind gets busy with other thoughts.
-* I start preparing my answer before the person finishes speaking.
-* I sometimes lose concentration when the discussion is very long or uninteresting.
+* My main problems are phone distractions, lack of concentration, thinking about my reply too early, and sometimes assuming what the person will say.
 
 ### Question 4: What can you do to improve your listening?
 
-**Answer:**
-
-* Put away things that can distract me while someone is talking.
-* Concentrate on the person and understand what they are saying.
-* Write down important points during discussions.
-* Ask questions when something is unclear instead of guessing.
-
----
+* I can avoid distractions, focus on the speaker, take notes, ask questions, and not interrupt while they are speaking.
 
 ## 4. Types of Communication
 
-### Question 5: When do you switch to Passive communication style in your day-to-day life?
+### Question 5: When do you switch to Passive communication style?
 
-**Answer:**
+* I become passive when I want to avoid arguments or when I am not confident about sharing my opinion.
 
-I may become passive when I want to avoid an argument. In such situations, I sometimes keep my opinion to myself and allow others to make the decision.
+### Question 6: When do you switch into Aggressive communication styles?
 
-### Question 6: When do you switch into Aggressive communication style in your day-to-day life?
+* I may become aggressive when I am angry, frustrated, or under pressure, but I should try to handle the situation calmly.
 
-**Answer:**
+### Question 7: When do you switch into Passive-Aggressive communication styles?
 
-I may become aggressive when I am extremely annoyed or feel that nobody is listening to me. At that time, I might speak loudly or react impatiently.
-
-### Question 7: When do you switch into Passive-Aggressive communication style in your day-to-day life?
-
-**Answer:**
-
-I may use passive-aggressive communication when I am upset but do not say it openly. Instead, I may use sarcasm, avoid talking, or express my anger indirectly.
+* I may become passive-aggressive when I am annoyed but do not directly say what is bothering me.
 
 ### Question 8: How can you make your communication assertive?
 
-**Answer:**
+* I can be clear and respectful, share my opinion directly, listen to others, and discuss problems without blaming anyone.
 
-* Use sentences like **“I feel…”** or **“I need…”** to express myself instead of blaming others.
-* Be direct and honest while still being respectful.
-* Listen to other people’s opinions even when I have a different view.
-* Keep my voice and behavior calm during disagreements.
-* Learn to say **“no”** politely when I am unable to help.
